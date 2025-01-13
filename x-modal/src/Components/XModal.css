@@ -1,0 +1,72 @@
+.openform {
+    position: absolute;
+    left: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    width: 90%;
+    max-width: 550px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.openFormBtn,
+.submit-button {
+    background-color: rgb(53, 105, 202);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.openFormBtn:hover,
+.submit-button:hover {
+   
+    background-color: rgb(43, 82, 154);
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: calc(100% - 20px);
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(197, 188, 188, 0.745);
+    padding: 5px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(53, 105, 202);
+    box-shadow: 0px 0px 5px rgba(53, 105, 202, 0.5);
+}
