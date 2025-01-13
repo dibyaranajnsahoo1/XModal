@@ -21,10 +21,11 @@ const XModal = () => {
   };
 
   const handleOutsideClick = (e) => {
-    if (e.target.className === "modal") {
+    if (e.target.className === "modal" && !e.target.closest(".modal-content")) {
       handleCloseForm();
     }
   };
+  
 
   const handleInputChange = (e) => {
     setFormData({
